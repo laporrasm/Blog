@@ -112,7 +112,7 @@ main {
 
 .search input:focus { color: white; }
 
-/** .article-info --> Articles author, date and save and share buttons **/
+/** .article-info --> Article's author, date and save and share buttons **/
 
 .article-info {
   flex-wrap: wrap;

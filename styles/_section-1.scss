@@ -1,0 +1,52 @@
+.section-1 {
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+
+  .main-article {
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      > p { line-height: 1.75em; }
+    }
+
+    figure {
+      flex-shrink: 0;
+      text-align: right;
+
+      img {
+        width: 100%;
+        max-width: 540px;
+      }
+    }
+  }
+
+  article:not(.main-article) {
+    max-width: 300px;
+    
+    figure {
+      margin-bottom: 1rem;
+      text-align: center;
+
+      img {
+        max-width: 300px;
+        width: 100%;
+      }
+    }
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, auto);
+    column-gap: 1rem;
+    margin: 2rem 0;
+  }
+
+  > p {
+    text-align: right;
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.section-2 {
+  > div:last-child { justify-content: space-between; }
+  
+  article {
+    margin-bottom: 2rem;
+    transition: .5s transform, .5s boxshadow;
+
+    &:hover {
+      box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.02);
+      transform: translateY(-0.25rem);
+      transition: .5s transform, .5s boxshadow;
+    }
+
+    > div {
+      width: 70%;
+      padding: 1rem;
+      border: .05rem solid rgba(0, 0, 0, .05);
+    }
+
+    figure {
+      width: 30%;
+      
+      img {
+        display: block;
+        max-width: 300px;
+        width: 100%;
+      }
+    }
+  }
+}
